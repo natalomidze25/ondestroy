@@ -1,0 +1,5 @@
+<app-timer-component *ngIf="showTimer" (timeLeft)="timeCount($event)"></app-timer-component>
+<div class="Tbutton-Tfinished">
+  <button (click)="toggleTimer()">timer button</button>
+  <p *ngIf="seconds > 0">timer finished{{seconds}}</p>
+</div>
